@@ -4,6 +4,18 @@ Editor de modelado 3D multi-usuario en tiempo real. Todos editan la misma escena
 
 Proyecto del desafio en vivo — **Max Sarlija Academy**.
 
+## Portfolio (fork Igor-Streiff)
+
+| Recurso | Enlace |
+|---------|--------|
+| Demo (GitHub Pages) | https://igor-streiff.github.io/VoxelParty/ |
+| Repo del curso (upstream) | https://github.com/maxsarlijagit/VoxelParty |
+| Mi prototipo sync P2P (30 min) | rama [`feature/sync-multiplayer-p2p`](https://github.com/Igor-Streiff/VoxelParty/tree/feature/sync-multiplayer-p2p) · tag `igor-sync-sprint-2026-05` |
+
+**Mi aporte:** capa de sincronizacion multiplayer P2P con Yjs + `y-webrtc` (`src/sync.js`): documento compartido, `Y.Map` de objetos, salas por URL, awareness de usuarios conectados.
+
+Para probar multiplayer: abri la misma URL (incluido `?room=...`) en dos pestanas o navegadores.
+
 ## Stack
 
 | Capa | Tecnologia |
