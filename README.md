@@ -1,17 +1,20 @@
 # VoxelParty — Collaborative 3D Studio
 
-Editor de modelado 3D multi-usuario en tiempo real. Todos editan la misma escena, al mismo tiempo, desde el navegador. Sin servidor, sin costo.
-
+Editor 3D colaborativo en tiempo real. Permite crear y transformar objetos en una escena compartida desde el navegador.
 Proyecto del desafio en vivo — **Max Sarlija Academy**.
+## Demo en video
 
-## Portfolio (fork Igor-Streiff)
+
+https://github.com/user-attachments/assets/600df259-f173-4306-8704-3c484b14e460
+
+
+## Demo y enlaces
 
 | Recurso | Enlace |
 |---------|--------|
 | Demo (GitHub Pages) | https://igor-streiff.github.io/VoxelParty/ |
 | Repo del curso (upstream) | https://github.com/maxsarlijagit/VoxelParty |
-| Mi prototipo sync P2P (30 min) | rama [`feature/sync-multiplayer-p2p`](https://github.com/Igor-Streiff/VoxelParty/tree/feature/sync-multiplayer-p2p) · tag `igor-sync-sprint-2026-05` |
-
+| Mi prototipo de sincronización P2P | [Ver prototipo](https://github.com/Igor-Streiff/VoxelParty/tree/igor-sync-sprint-2026-05) |
 **Mi aporte:** capa de sincronizacion multiplayer P2P con Yjs + `y-webrtc` (`src/sync.js`): documento compartido, `Y.Map` de objetos, salas por URL, awareness de usuarios conectados.
 
 Para probar multiplayer: abri la misma URL (incluido `?room=...`) en dos pestanas o navegadores.
@@ -73,7 +76,7 @@ package.json
 4. Clicks en el toolbar o atajos de teclado crean objetos 3D sincronizados.
 5. Selección en 3D vía Raycaster (con resaltado visual BoxHelper) y manipulación directa interactiva usando Gizmos (TransformControls).
 6. Tráfico de red optimizado con throttling a 15 Hz para el arrastre y sincronización de propiedades en la barra de propiedades lateral.
-7. Todo P2P, sin servidor propio (con fallback al servidor público en caso de caída).
+7. Todo P2P, sin servidor propio.
 
 ## Asset Exchange (Python)
 
